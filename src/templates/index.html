@@ -1,0 +1,61 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title -->
+    <title>Zack Taylor - Security Engineer</title>
+    <!-- Shortcut Icon-->
+    <link rel="shortcut icon" href="{% static 'img/z.ico' %}" type="image/x-icon">
+	<link rel="icon" href="{% static 'img/z.ico' %}" type="image/x-icon">
+    <!-- Stylesheets -->
+    <link type="text/css" rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+
+</head>
+<body>
+
+    <nav>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+
+        <ul class="nav-links">
+            <li class="nav-link" style="margin-bottom: -300px;"><span class="rubber"><a href="#">Latest Work</span></a></li>
+            <li class="nav-link" style="margin-bottom: -300px;"><span class="rubber"><a href="#">About</span></a></li>
+            <li class="nav-link" style="margin-bottom: -300px;"><span class="rubber"><a href="#">Skills</span></a></li>
+            <li class="nav-link" style="margin-bottom: -300px;"><span class="rubber"><a href="#">Testimonials</span></a></li>
+            <li class="nav-link" style="margin-bottom: -300px;"><span class="rubber"><a href="#">Contact</span></a></li>
+            <li class="nav-link"><a href="#"><span class="rubber">Resume</span></a></li>
+        </ul>
+    </nav>
+
+    <section class="landing">
+            <h1 style="font-size: 5vw; font-size: 36px; margin-top: -55px;"><span class="rubber">{testing grounds}</span></h1>
+            <img src="{% static 'img/animat-responsive-color.gif' %}" height="100" style="margin-top: -95px; margin-bottom: -10px;">
+        <div class="icon-box">
+            <ul class="social-icons">
+			    <li><a href="https://github.com/z-taylor"><span class="rubber"><i class="fab fa-github fa-lg"></i></span></a></li>
+			    <li><a href="https://dribbble.com/zacktaylor1"><span class="rubber"><i class="fab fa-dribbble fa-lg"></i></span></a></li>
+			    <li><a href="https://linkedin.com/in/zacktaylor1"><span class="rubber"><i class="fab fa-linkedin fa-lg"></i></span></a></li>
+			    <li><a href="https://codepen.io/zacktaylor/"><span class="rubber"><i class="fab fa-codepen fa-lg"></i></span></a></li>
+		    </ul>
+        </div>
+    </section>
+
+
+
+
+    <script src="{% static 'js/main.js' %}"></script>
+    <script src="{% static 'js/jquery-3.3.1.js' %}"></script>
+    <script src="{% static 'js/wow.min.js' %}"></script>
+    <script src="https://kit.fontawesome.com/e751257ecf.js" crossorigin="anonymous"></script>
+</body>
+</html>

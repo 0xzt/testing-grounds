@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    color: #fff;
+    background-color: #0062ff;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Navbar Animation */
+nav{
+    height: 10vh;
+    background: #0062ff;
+}
+.nav-links {
+    display: flex;
+    list-style: none;
+    width: 50%;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: auto;
+}
+.landing {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.landing h1 {
+    margin: 100px;
+    margin-bottom: 100px;
+    font-size: 40px;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+}
+.landing h1:hover {
+    color: #f08080;
+}
+.line {
+    width: 30px;
+    height: 3px;
+    background: #fff;
+    margin: 5px;
+}
+nav {
+    position: relative;
+}
+.hamburger {
+    align-items: center;
+    position: absolute;
+    cursor: pointer;
+    right: 2%;
+    top: 50%;
+    transform: translate(-2%, -50%);
+    z-index: 2;
+}
+.nav-links {
+    position: fixed;
+    background: #f08080;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    clip-path: circle(0px at 98% -8%);
+    -webkit-clip-path: circle(0px at 98% -8%);
+    transition: all 1s ease-out;
+    pointer-events: none;
+}
+.nav-links.open {
+    clip-path: circle(1300px at 90% -10%);
+    -webkit-clip-path: circle(1300px at 90% -10%);
+    pointer-events: all;
+}
+.landing {
+    flex-direction: column;
+}
+.nav-links li {
+    opacity: 0;
+}
+.nav-links li a:hover {
+    color: #0062ff;
+    transition: all 0.3s ease;
+}
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 52px;
+    font-weight: 800;
+}
+.nav-links li:nth-child(1) {
+    transition: all 0.5s ease 0.2s;
+}
+.nav-links li:nth-child(2) {
+    transition: all 0.5s ease 0.4s;
+}
+
+.nav-links li:nth-child(3) {
+    transition: all 0.5s ease 0.6s;
+}
+.nav-links li:nth-child(4) {
+    transition: all 0.5s ease 0.8s;
+}
+
+.nav-links li:nth-child(5) {
+    transition: all 0.5s ease 1.0s;
+}
+
+.nav-links li:nth-child(6) {
+    transition: all 0.5s ease 1.2s;
+}
+li.fade {
+    opacity: 1;
+}
+
+
+/* Social Icons */
+.icon-box {
+    position: absolute;
+    right: 2%;
+    top: 76%;
+    margin-left: auto;
+}
+.social-icons {
+    list-style-type: none;
+    display: block;
+    z-index: 0;
+}
+.social-icons li {
+    list-style-type: none;
+    display: block;
+}
+.social-icons li a {
+    color: #fff;
+    list-style-type: none;
+    display: block;
+    padding: 12px 12px;
+    margin: 4px 0;
+}
+/* .social-icons li a i:hover {
+    color: #f08080;
+} */
+
+/* Rubber Animation */
+.rubber {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+    display: block;
+}
+
+.rubber:hover {
+    /* animation: rubberBand 5s infinite; */
+    animation-name: rubberBand;
+}
+
+@keyframes rubberBand {
+    from {
+        transform: scale3d(1, 1, 1);
+    }
+
+    30% {
+        transform: scale3d(1.25, 0.75, 1);
+    }
+
+    40% {
+        transform: scale3d(0.75, 1.25, 1);
+    }
+
+    50% {
+        transform: scale3d(1.15, 0.85, 1);
+    }
+
+    65% {
+        transform: scale3d(.95, 1.05, 1);
+    }
+
+    75% {
+        transform: scale3d(1.05, .95, 1);
+    }
+
+    to {
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    
+}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .nav-links.open {
+        clip-path: circle(1400px at 90% -10%);
+        -webkit-clip-path: circle(1400px at 90% -10%);
+        pointer-events: all;
+    }
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+    .nav-links.open {
+        clip-path: circle(1700px at 90% -10%);
+        -webkit-clip-path: circle(1700px at 90% -10%);
+        pointer-events: all;
+    }
+}
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+    .nav-links.open {
+        clip-path: circle(1900px at 90% -10%);
+        -webkit-clip-path: circle(1900px at 90% -10%);
+        pointer-events: all;
+    }
+}
+
